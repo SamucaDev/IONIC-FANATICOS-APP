@@ -1,0 +1,225 @@
+$background-color: #fff;
+$font-color: #585959;
+
+#container {
+  background: $background-color;
+  min-height: 100vh;
+  padding: 26px 26px 130px 26px;
+  position: relative;
+
+}
+
+
+
+
+#div-table {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+}
+
+#div-component-tab {
+  display: block;
+  width: 100%;
+  background: #F3F4F9;
+  margin: 0 auto;
+  /* border-radius: 27px; */
+  height: 100%;
+  padding: 13px 16px;
+}
+
+.button-menu {
+  width: 20%;
+  background: transparent;
+  border: none;
+  color: black;
+  --background: transparent;
+  --box-shadow: none;
+}
+
+.icon-cart-outline {
+  width: 37px;
+  height: 37px;
+}
+
+
+#div-icon {
+  width: auto;
+  float: left;
+  padding: 0;
+  margin: 0;
+  --color: black;
+  --padding-start: 3px;
+  --padding-end: 3px;
+  --background: transparent;
+}
+
+.icon-button {
+  --color: #585959
+}
+
+#div-title {
+  text-align: right;
+}
+
+.h1-title-section {
+  color: #585959;
+  padding: 5px 0px 0 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.button-card-product {
+  height: 110px;
+  width: 100%;
+  border-radius: 13px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 40px;
+  background: #F3F4F9;
+}
+
+.button-card-product {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 13px;
+  height: auto;
+}
+
+
+.h1-title {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.h2-subtitle {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: start;
+  margin-left: 8px;
+}
+
+.p-price {
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  margin-left: 7px;
+  margin-top: 12px;
+  font-weight: 600;
+
+}
+
+.div-image-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+
+.img-product {
+  width: 89px;
+  height: 89px;
+}
+
+
+.div-button-count {
+  margin-bottom: 23px;
+  width: 110px;
+  position: relative;
+  margin-top: 11px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.button-count {
+  --background: #5697A6;
+  --padding-start: 6px;
+  --padding-end: 6px;
+  --padding-top: 6px;
+  --padding-bottom: 6px;
+  font-size: 10px;
+  ;
+
+  &:first-child {
+    margin-right: 23px;
+  }
+
+  &:last-child {
+    margin-left: 23px;
+  }
+}
+
+.text-button {
+
+  font-size: 17px;
+  color: #585959;
+  margin-left: 7px;
+}
+
+.value-price {
+
+  font-size: 30px;
+  text-align: right;
+
+}
+
+.div-value-total {
+  width: 100%;
+}
+
+.div-p-value {
+  width: 50%;
+
+  &:first-child {
+    float: left;
+
+  }
+
+  &:last-child {
+    float: right;
+  }
+}
+
+.p-value {
+  color: #000;
+  font-weight: bold;
+
+  &.right {
+    text-align: left;
+  }
+
+  &.left {
+    text-align: right;
+  }
+}
+
+.button-buy {
+  margin-top: 13px;
+  width: 100%;
+  --border-radius: 20px;
+  --background: #144C59;
+}
+
+.action-cart {
+  float: right;
+}
+
+#option-cart {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}

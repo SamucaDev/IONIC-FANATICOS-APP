@@ -1,0 +1,56 @@
+<ion-content>
+
+  <div id="container">
+
+    <ion-button id="div-icon">
+      <ion-back-button text="" class="icon-button" defaultHref="/page-menu" icon="arrow-back-outline">
+      </ion-back-button>
+    </ion-button>
+
+    <div id="div-title">
+      <h1 class="h1-title-section">Carrinho</h1>
+    </div>
+
+    <div id="option-cart">
+      <a class="action-cart" (click)="clearCart()">Limpar carrinho</a>
+    </div>
+
+    <button *ngFor="let item of products" class="button-card-product"
+      (click)="navigateScreen('page-buy', item.productid, item.amount )">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="7">
+            <h1 class="h1-title">{{ item.name }}</h1>
+            <div class="div-button-count">
+              <p class="text-button">Qtd: {{item.amount}}</p>
+            </div>
+            <p class="p-price">R$ {{ formatPrice(item.price)}}</p>
+          </ion-col>
+          <ion-col size="5">
+            <div class="div-image-product">
+              <ion-img class="img-product" src="http://localhost:1533/storage/{{item.pathImg}}"></ion-img>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+  </div>
+
+  <div id="div-table">
+    <div id="div-component-tab">
+
+      <div class="div-value-total">
+        <div class="div-p-value">
+          <p class="p-value right">Valor Total:</p>
+        </div>
+        <div class="div-p-value">
+          <p class="p-value left">R$ {{ priceTotal }}</p>
+        </div>
+      </div>
+      <ion-button class="button-buy">Finalizar Compra</ion-button>
+    </div>
+  </div>
+
+
+</ion-content>

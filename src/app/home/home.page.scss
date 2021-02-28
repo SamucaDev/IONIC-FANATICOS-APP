@@ -1,11 +1,16 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
+  height: 100%;
   transform: translateY(-50%);
+  background: no-repeat  url('../../assets//img/imageBrand/imgPizzaLogin.jpg');
+  background-size: cover;
+  max-width: 1024px; 
+  margin: 0 auto;
+  opacity: 0.27;
 }
 
 #container strong {

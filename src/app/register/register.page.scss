@@ -1,0 +1,73 @@
+#container {
+ 
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 100%;
+    background: no-repeat url('../../assets//img/imageBrand/imgPizzaLogin.jpg');
+    background-size: cover;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+  //   opacity: 0.27;
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #1e1e1e;
+      margin: 0;
+      font-weight: 600;
+      text-align: center;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  
+  .div-card-login {
+      height: 410px;
+      width: 86%;
+      background: #808080e6;
+      border-radius: 42px;
+  
+  
+  }
+  
+  #logo-brand{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .input-login{
+      --background: #fff;
+      --color: black;
+      --padding-start: 9px;
+      width: 86%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 15px;
+  }
+  
+  .h1-title{
+      text-align: center;
+      font-weight: 600;
+      color: black;
+  }
+  
+  .button-create{
+      margin: 0 auto;
+      margin-top: 20px;
+      display: block;
+      width: 70%;
+      --background: #383838;
+  }

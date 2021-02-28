@@ -1,0 +1,102 @@
+$background-color: #fff;
+$font-color: #585959;
+
+#container {
+  background: $background-color;
+  min-height: 100vh;
+  padding: 26px;
+  position: relative;
+}
+
+.icon-row {
+  color: #585959;
+  width: 29px;
+  height: 35px;
+
+}
+
+#div-icon {
+  width: auto;
+  float: left;
+  padding: 0;
+  margin: 0;
+  --color: black;
+  --padding-start: 3px;
+  --padding-end: 3px;
+  --background: transparent;
+}
+
+.icon-button{
+  --color: #585959
+}
+
+#div-title {
+  text-align: right;
+}
+
+.h1-title-section {
+  color: #585959;
+  padding: 5px 0px 0 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.button-card-product {
+  height: 110px;
+  width: 100%;
+  border-radius: 13px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 40px;
+  background: #F3F4F9;
+}
+
+.button-card-product {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 13px;
+  height: auto;
+}
+
+.h1-title {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.h2-subtitle {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: start;
+  margin-left: 8px;
+}
+
+.p-price{
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin-left: 7px;
+    margin-top: 12px;
+    font-weight: 600;
+
+}
+
+.img-product {
+  width: 89px;
+  height: 89px;
+}
+
+.div-image-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}

@@ -1,0 +1,113 @@
+$background-color: #fff;
+$font-color: #585959;
+
+#container {
+  background: $background-color;
+  min-height: 100vh;
+  position: relative;
+}
+
+.icon-row {
+  color: #585959;
+  width: 29px;
+  height: 35px;
+
+}
+
+
+#div-icon {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 22px;
+  margin-top: 17px;
+  --padding-start: 3px;
+  --padding-end: 3px;
+  --background: transparent;
+}
+
+.icon-button {
+  --color: #585959
+}
+
+.img-product {
+  width: 68%;
+  display: block;
+  margin: 0 auto;
+}
+
+#div-info-product {
+  display: block;
+  height: 41vh;
+}
+
+#info-product {
+  background-color: #144C59;
+  width: 100%;
+  border-top-left-radius: 52px;
+  border-top-right-radius: 52px;
+  min-height: 55vh;
+  padding: 15px 23px 15px 23px;
+}
+
+.title-product {
+  text-align: center;
+  margin-top: 15px;
+  margin: 0;
+}
+
+.subtitle-product {
+  text-align: center;
+  font-size: 15px;
+}
+
+.box-info {
+  margin-bottom: 40px;
+}
+
+.box-buttom {}
+
+.button-sell {
+  --border-radius: 30px;
+  --background: #5697A6;
+  float: left;
+}
+
+.div-button-count {
+  margin-bottom: 23px;
+  width: 152px;
+  position: relative;
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-count {
+  --background: #5697A6;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+
+  &:first-child {
+    margin-right: 23px;
+  }
+
+  &:last-child {
+    margin-left: 23px;
+  }
+}
+
+.text-button {
+
+    font-size: 22px;
+    color: #fff;
+}
+
+.value-price{
+    
+    font-size: 30px;
+    text-align: right;
+
+}

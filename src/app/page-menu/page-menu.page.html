@@ -1,0 +1,89 @@
+<ion-content>
+  <div id="container">
+    <div id="div-header-menu">
+      <p class="p-subtitle-menu">Olá Samuel,</p>
+      <p class="p-title-menu">Bem-vindo de volta!</p>
+    </div>
+
+
+    <div>
+      <p class="p-topic-title">Prato Principal</p>
+    </div>
+
+    <div id="div-popular">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <p class="p-text-main">Pizza {{ name }}</p>
+            <ion-button (click)="navigateScreenMainProduct('page-buy', id)" class="button-price">R$ {{price}}</ion-button>
+          </ion-col>
+          <ion-col size="6" class="col-img">
+            <ion-img class="img-main-product" src="http://localhost:1533/storage/{{pathImg}} "></ion-img>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+    <div>
+      <p class="p-topic-title">Categorias</p>
+    </div>
+
+
+
+
+    <div>
+      <ion-grid>
+
+        <ion-row class="div-container-categories">
+
+          <ion-col (click)="navigateScreen('page-menu-pizza',1)" size="6">
+            <button class="div-first-group">Pizza salgada</button>
+          </ion-col>
+
+          <ion-col size="6">
+
+            <ion-row class="div-categories-minsize candy">
+              <button (click)="navigateScreen('page-menu-pizza',2)" class="button-categories-medium">Pizza Doce</button>
+
+            </ion-row>
+
+            <ion-row class="div-categories-minsize drink">
+              <button (click)="navigateScreen('page-menu-pizza',3)" class="button-categories-medium">Bebidas</button>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+  <div id="div-table">
+    <div id="div-component-tab">
+
+      <ion-button class="button-menu" (click)="navigateScreen('page-menu')">
+        <ion-icon class="icon-cart-outline" name="home-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button class="button-menu" (click)="gotoCart()">
+        <ion-icon class="icon-cart-outline" name="bag-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button class="button-menu">
+        <ion-icon class="icon-cart-outline" name="cog-outline"></ion-icon>
+      </ion-button>
+
+    </div>
+  </div>
+
+</ion-content>

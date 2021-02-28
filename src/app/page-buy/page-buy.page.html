@@ -1,0 +1,38 @@
+<ion-content>
+
+  <div id="container">
+    <ion-button id="div-icon">
+      <ion-back-button text="" class="icon-button" defaultHref="/page-menu" icon="arrow-back-outline">
+      </ion-back-button>
+    </ion-button>
+
+    <div id="div-info-product">
+      <ion-img class="img-product" src="http://localhost:1533/storage/{{product.pathImg}}"></ion-img>
+    </div>
+
+    <div id="info-product">
+      <div class="box-info">
+        <h1 class="title-product">{{ product.name }}</h1>
+        <h2 class="subtitle-product">{{ product.desc }}</h2>
+      </div>
+
+      <div class="div-button-count">
+        <ion-button class="button-count" (click)="countMenos()">
+          <ion-icon name="remove-outline"></ion-icon>
+        </ion-button>
+        <span class="text-button">{{ product.countQtd}}</span>
+
+        <ion-button class="button-count" (click)="countMais()">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="box-buttom">
+        <ion-button class="button-sell" (click)="addItem()">Adicionar ao carrinho</ion-button>
+        <p class="value-price">R$ {{ product.priceTotal }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

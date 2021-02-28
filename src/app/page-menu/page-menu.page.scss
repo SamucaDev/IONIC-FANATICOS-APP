@@ -1,0 +1,199 @@
+$background-color: #fff;
+$font-color: #585959;
+
+#container {
+  background: $background-color;
+  min-height: 100vh;
+  padding: 26px 26px 130px 26px ;
+  position: relative;
+
+}
+
+#div-header-menu {
+  padding-top: 30px;
+}
+
+.p-title-menu {
+  color: $font-color;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button-menu {
+  width: 20%;
+  background: transparent;
+  border: none;
+  color: black;
+  --background: transparent;
+  --box-shadow: none;
+}
+
+.icon-cart-outline {
+  width: 37px;
+  height: 37px;
+}
+
+.search-menu {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 11px;
+  border-radius: 20px;
+  color: #585959;
+  height: 42px;
+  --background: #fff;
+}
+
+#div-categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.button-categories {
+  width: 90px;
+  height: 60px;
+  --border-radius: 7px;
+}
+
+.p-subtitle-menu {
+  font-weight: 400;
+  color: #585959;
+  /* margin: 0px 20px 0px 20px; */
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+#div-popular {
+  height: 190px;
+  width: 100%;
+  background: #144C59;
+  margin-top: 18px;
+  border-radius: 9px;
+  padding: 17px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.p-topic-title {
+  margin-top: 20px;
+  color: $font-color;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.img-main-product {
+  width: 144px;
+}
+
+.col-img {}
+
+.p-text-main {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.button-price {
+  --background: #fff;
+  color: #144C59;
+  font-weight: 600;
+  margin-top: 30px;
+  --border-radius: 50px;
+  --padding-end: 23px;
+  --padding-start: 23px;
+  --padding-bottom: 0px;
+  --padding-top: 0px;
+}
+
+#div-table {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#div-component-tab {
+  display: flex;
+  width: 80%;
+  background: #F3F4F9;
+  margin: 0 auto;
+  border-radius: 27px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 16px;
+}
+
+.div-first-group {
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+  background: #F08040;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 10px;
+  background-image: url('https://deliverybo.pizzahut.com.br/pratos/9%20-%20Pizza%20Pepperoni.png');
+  background-repeat: no-repeat;
+  background-size: 153px;
+  background-position: 45px 126px;
+
+   padding: 0;
+    text-align: left;
+    flex-direction: column;
+    padding: 12px;
+    font-size: 19px;
+}
+
+.div-container-categories {
+  height: 240px;
+  margin-top: 20px;
+}
+
+.div-categories-minsize {
+  width: 95%;
+  height: 47%;
+  background: #F3F4F9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 10px;
+  border-radius: 10px;
+
+  &:first-child {
+    margin-bottom: 9%;
+  }
+
+  &.drink {
+    background-image: url('../../assets/img/imageBrand/imgCoca.png');
+    background-repeat: no-repeat;
+    background-size: 112px;
+    background-position: 68px 6px;
+  }
+
+  &.candy {
+
+    background-image: url('../../assets/img/imageBrand/imgPizzaDoce.png');
+    background-repeat: no-repeat;
+    background-size: 131px;
+    background-position: 56px 35px;
+  }
+
+}
+
+.button-categories-medium {
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    color: #585959;
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    flex-direction: column;
+    padding: 6px;
+    font-size: 19px;
+}
+
+.p-title-button{
+    color: $font-color;
+    text-align: left;
+}
