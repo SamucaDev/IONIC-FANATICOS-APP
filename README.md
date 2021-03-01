@@ -10,6 +10,9 @@ O App utilizou APIs desenvolvidas em Laravel. [Repositorio APIS](https://github.
 - Inclusão de itens no carrinho
 - Visão geral do carrinho
 
+## Requisitos
+- [NODE] >= 12.0
+- [IONIC] >= 6.0
 
 ## Tecnologias
 
@@ -67,4 +70,6 @@ ionic serve
    [Ionic]: <https://ionicframework.com>
    [Linkedin]: <https://www.linkedin.com/in/samuelrodrigues18>
    [GitHub]: <https://github.com/DevSamuelRodrigues>
+   [NODE]: <https://nodejs.org/en/>
+   [IONIC]: <https://ionicframework.com/docs>
 
