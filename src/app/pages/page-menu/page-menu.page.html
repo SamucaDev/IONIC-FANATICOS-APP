@@ -1,7 +1,7 @@
 <ion-content>
   <div id="container">
     <div id="div-header-menu">
-      <p class="p-subtitle-menu">Olá Samuel,</p>
+      <p class="p-subtitle-menu">Olá {{nameUser}},</p>
       <p class="p-title-menu">Bem-vindo de volta!</p>
     </div>
 
@@ -79,7 +79,7 @@
         <ion-icon class="icon-cart-outline" name="bag-outline"></ion-icon>
       </ion-button>
 
-      <ion-button class="button-menu">
+      <ion-button class="button-menu" (click)="presentAlertConfirm()">
         <ion-icon class="icon-cart-outline" name="cog-outline"></ion-icon>
       </ion-button>
 

@@ -6,7 +6,7 @@
   top: 50%;
   height: 100%;
   transform: translateY(-50%);
-  background: no-repeat  url('../../assets//img/imageBrand/imgPizzaLogin.jpg');
+  background: no-repeat  url('../../../assets//img/imageBrand/imgPizzaLogin.jpg');
   background-size: cover;
   max-width: 1024px; 
   margin: 0 auto;
@@ -21,9 +21,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 

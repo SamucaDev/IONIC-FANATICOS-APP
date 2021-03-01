@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Router } from '@angular/router';
-
-
-import { ProductService } from "../../app/service/product.service";
+import { ProductService } from "../../service/product.service";
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-page-menu',
@@ -20,11 +18,17 @@ export class PageMenuPage implements OnInit {
   id: any;
   groupproductid: any;
 
+  
+  nameUser: string;
+
   constructor(
     public Router: Router,
     public ProductService: ProductService,
+    public alertController: AlertController
   ) {
     this.getMainProduct()
+    
+    this.nameUser = localStorage.getItem('U_N')
   }
 
   ngOnInit() {
@@ -78,5 +82,32 @@ export class PageMenuPage implements OnInit {
     })
 
   }
+
+  async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Deseja sair?',
+      buttons: [
+        {
+          text: 'Não',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+          }
+        }, {
+          text: 'Sim',
+          handler: () => {
+            localStorage.removeItem('U_T');
+            localStorage.removeItem('U_N');
+            localStorage.removeItem('U_D');
+            this.Router.navigateByUrl('/page-menu');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
 
 }

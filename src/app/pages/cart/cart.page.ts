@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 import { Location } from "@angular/common";
 
-import { Router,ActivatedRoute } from '@angular/router';
-import { CartService } from "../../app/service/cart.service";
+import { Router, ActivatedRoute } from '@angular/router';
+import { CartService } from "../../service/cart.service";
 
+import { ToastController } from '@ionic/angular';
 
 import { NgZone } from '@angular/core';
 
@@ -23,11 +24,12 @@ export class CartPage implements OnInit {
   products: any
 
   constructor(
-    private ngZone:NgZone,
+    private ngZone: NgZone,
     public Router: Router,
     public CartService: CartService,
     private location: Location,
-    
+
+    public toastController: ToastController,
     public activatedRoute: ActivatedRoute,
   ) {
 
@@ -41,6 +43,16 @@ export class CartPage implements OnInit {
     // this.getItemCart()
   }
 
+  async presentToast(message) {
+    const toast = await this.toastController.create({
+      message: message,
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present();
+  }
+
+
   navigateScreen(route, id, qtd) {
     console.log(id + 'Teste');
     var typeQuery = {
@@ -49,11 +61,11 @@ export class CartPage implements OnInit {
         'qtd': qtd,
       }
     };
-    
+
     this.Router.routeReuseStrategy.shouldReuseRoute = function () {
       return false;
-  }
-  this.Router.onSameUrlNavigation = 'reload';
+    }
+    this.Router.onSameUrlNavigation = 'reload';
     this.Router.navigate([route], typeQuery);
   }
 
@@ -67,8 +79,8 @@ export class CartPage implements OnInit {
 
   getItemCart() {
     this.CartService.getItemsCart().subscribe((data: {}) => {
-    
-      if(data['success'] == true){
+
+      if (data['success'] == true) {
 
         this.formItems = data['formItems'];
         this.products = this.formItems.products;
@@ -76,7 +88,7 @@ export class CartPage implements OnInit {
         console.log(this.formItems.products);
 
       } else {
-          // tratative erro  
+        // tratative erro  
       }
 
     });
@@ -84,13 +96,30 @@ export class CartPage implements OnInit {
   clearCart() {
     this.CartService.clear(this.formItems.cartid).subscribe((data: {}) => {
 
-     this.Router.navigateByUrl('/page-menu')
+      this.Router.navigateByUrl('/page-menu')
 
     });
   }
 
-  formatPrice(price){
-    
+  formatPrice(price) {
+
+    const expression = /^\d*(\,[1-9]{1})?$/g;
+
+    const reg = new RegExp(expression);
+
+    if (reg.test(price)) {
+      console.log(price + '0');
+      return price + '0';
+    } else {
+      console.log(price + '00');
+      return price + '00'
+    }
+
+    return price.replace();
+  }
+
+  sendOrder() {
+    this.presentToast('Função em construção!')
   }
 
 }

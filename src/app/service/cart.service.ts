@@ -23,7 +23,8 @@ export class CartService {
 
   httpHeader = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Authorization': 'bearer ' + (localStorage.getItem('U_T'))
     })
   }
 

@@ -24,7 +24,7 @@
             <div class="div-button-count">
               <p class="text-button">Qtd: {{item.amount}}</p>
             </div>
-            <p class="p-price">R$ {{ formatPrice(item.price)}}</p>
+            <p class="p-price">R$ {{ item.price}}</p>
           </ion-col>
           <ion-col size="5">
             <div class="div-image-product">
@@ -48,7 +48,7 @@
           <p class="p-value left">R$ {{ priceTotal }}</p>
         </div>
       </div>
-      <ion-button class="button-buy">Finalizar Compra</ion-button>
+      <ion-button (click)="sendOrder()"  class="button-buy">Finalizar Compra</ion-button>
     </div>
   </div>
 

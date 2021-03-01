@@ -134,7 +134,7 @@ $font-color: #585959;
   background: #F08040;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 10px;
-  background-image: url('https://deliverybo.pizzahut.com.br/pratos/9%20-%20Pizza%20Pepperoni.png');
+  background-image: url('../../../assets/img/imageBrand/pizzapeperone.png');
   background-repeat: no-repeat;
   background-size: 153px;
   background-position: 45px 126px;
@@ -164,7 +164,7 @@ $font-color: #585959;
   }
 
   &.drink {
-    background-image: url('../../assets/img/imageBrand/imgCoca.png');
+    background-image: url('../../../assets/img/imageBrand/imgCoca.png');
     background-repeat: no-repeat;
     background-size: 112px;
     background-position: 68px 6px;
@@ -172,7 +172,7 @@ $font-color: #585959;
 
   &.candy {
 
-    background-image: url('../../assets/img/imageBrand/imgPizzaDoce.png');
+    background-image: url('../../../assets/img/imageBrand/imgPizzaDoce.png');
     background-repeat: no-repeat;
     background-size: 131px;
     background-position: 56px 35px;

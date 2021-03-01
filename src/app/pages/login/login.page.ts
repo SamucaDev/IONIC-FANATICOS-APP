@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from "../../app/service/auth.service";
+import { AuthService } from "../../service/auth.service";
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
@@ -61,6 +61,11 @@ export class LoginPage implements OnInit {
       } else {
         
         localStorage.setItem('U_D',data['userid'])
+        localStorage.setItem('U_N',data['name'])
+        localStorage.setItem('U_T', data['token'])
+
+        
+        this.presentToast('Bem-vindo ' + data['name']);
 
         this.navigatePage('page-menu')
       }

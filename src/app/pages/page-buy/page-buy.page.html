@@ -29,7 +29,7 @@
 
       <div class="box-buttom">
         <ion-button class="button-sell" (click)="addItem()">Adicionar ao carrinho</ion-button>
-        <p class="value-price">R$ {{ product.priceTotal }}</p>
+        <p class="value-price">R$ {{ formatNumber(product.priceTotal)  }}</p>
       </div>
     </div>
 

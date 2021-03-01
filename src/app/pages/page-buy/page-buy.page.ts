@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from "@angular/common";
-import { ProductService } from "../../app/service/product.service";
-import { CartService } from "../../app/service/cart.service";
+import { ProductService } from "../../service/product.service";
+import { CartService } from "../../service/cart.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
@@ -16,6 +16,8 @@ export class PageBuyPage implements OnInit {
   countQtd: any = 1;
   formRequest = { id: '' };
 
+  name: string;
+
   product = { name: '', pathImg: '', price: 0, id: '', groupproductid: '', desc: '', priceTotal: 0, countQtd: 1, userid: 0 };
 
 
@@ -26,11 +28,12 @@ export class PageBuyPage implements OnInit {
     public Router: Router,
     public activatedRoute: ActivatedRoute,
 
-    private ngZone:NgZone,
+    private ngZone: NgZone,
     public toastController: ToastController
   ) {
 
     this.getData()
+
   }
 
   ngOnInit() {
@@ -85,15 +88,25 @@ export class PageBuyPage implements OnInit {
     this.ProductService.findProduct(this.formRequest).subscribe((data: {}) => {
 
       this.product = data['formProd'];
+
       this.product.priceTotal = data['formProd'].price * this.countQtd
 
+
+
       this.product.countQtd = this.countQtd;
+
       this.product.userid = parseInt(localStorage.getItem('U_D'));
 
     });
   }
 
   addItem() {
+
+
+    if (localStorage.getItem('U_D') == undefined) {
+      this.Router.navigateByUrl('register');
+    }
+
     this.CartService.addItem(this.product).subscribe((data: {}) => {
 
       // this.location.go('cart');
@@ -103,12 +116,16 @@ export class PageBuyPage implements OnInit {
       }
       this.Router.onSameUrlNavigation = 'reload';
 
-      this.ngZone.run(()=>this.Router.navigate(['cart']));
+      this.ngZone.run(() => this.Router.navigate(['cart']));
 
       this.Router.navigateByUrl('/cart');
 
       this.presentToast('Item adicionado no carrinho! ');
     });
+  }
+
+  formatNumber(priceTotal){
+    return priceTotal.toFixed(2);
   }
 
 

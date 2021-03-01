@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from "../../app/service/auth.service";
+import { AuthService } from "../../service/auth.service";
 import { Router } from '@angular/router';
 
 import { ToastController } from '@ionic/angular';
@@ -53,18 +53,23 @@ export class RegisterPage implements OnInit {
     }
 
 
-    if(this.userObj.password != this.passwordConfirm){
+    if (this.userObj.password != this.passwordConfirm) {
       this.presentToast('Confirmação de senha inválida');
       return;
     }
 
     this.AuthService.registerUser(this.userObj).subscribe((data: {}) => {
       if (data['success'] == false) {
-        this.presentToast('Verifique suas credencias!');
+        this.presentToast(data['message']);
         return;
+
       } else {
 
-        localStorage.setItem('U_D', data['userid'])
+        localStorage.setItem('U_D', data['userid']);
+        localStorage.setItem('U_N', data['name']);
+        localStorage.setItem('U_T', data['token']);
+
+        this.presentToast('Bem-vindo ' + data['name']);
 
         this.navigatePage('page-menu')
       };
