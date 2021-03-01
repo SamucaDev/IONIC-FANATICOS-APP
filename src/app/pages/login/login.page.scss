@@ -1,5 +1,5 @@
 #container {
- 
+
   left: 0;
   right: 0;
   top: 50%;
@@ -9,7 +9,7 @@
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
-//   opacity: 0.27;
+  //   opacity: 0.27;
 }
 
 #container strong {
@@ -18,12 +18,12 @@
 }
 
 #container p {
-    font-size: 16px;
-    line-height: 22px;
-    color: #1e1e1e;
-    margin: 0;
-    font-weight: 600;
-    text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e1e1e;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
 }
 
 #container a {
@@ -33,41 +33,61 @@
 
 .div-card-login {
   height: 286px;
-    width: 86%;
-    background: #808080e6;
-    border-radius: 42px;
+  width: 86%;
+  background: #808080e6;
+  border-radius: 42px;
 
 
 }
 
-#logo-brand{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#logo-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-login{
-    --background: #fff;
-    --color: black;
-    --padding-start: 9px;
-    width: 86%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 15px;
+.input-login {
+  --background: #fff;
+  --color: black;
+  --padding-start: 9px;
+  width: 86%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 15px;
 }
 
-.h1-title{
-    text-align: center;
-    font-weight: 600;
-    color: black;
+.h1-title {
+  text-align: center;
+  font-weight: 600;
+  color: black;
 }
 
-.button-create{
-    margin: 0 auto;
-    margin-top: 20px;
-    display: block;
-    width: 70%;
-    --background: #383838;
+.button-create {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  --background: #383838;
+}
+
+.link-p {
+  color: #5cccff
+}
+
+.icon-button {
+  --color: #fff
+}
+
+#div-icon {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 22px;
+  margin-top: 17px;
+  --padding-start: 3px;
+  --padding-end: 3px;
+  --background: transparent;
+  position: fixed;
 }

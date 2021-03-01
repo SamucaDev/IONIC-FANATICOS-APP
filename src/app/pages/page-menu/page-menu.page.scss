@@ -4,7 +4,7 @@ $font-color: #585959;
 #container {
   background: $background-color;
   min-height: 100vh;
-  padding: 26px 26px 130px 26px ;
+  padding: 26px 26px 130px 26px;
   position: relative;
 
 }
@@ -138,12 +138,13 @@ $font-color: #585959;
   background-repeat: no-repeat;
   background-size: 153px;
   background-position: 45px 126px;
+  color: #fff;
 
-   padding: 0;
-    text-align: left;
-    flex-direction: column;
-    padding: 12px;
-    font-size: 19px;
+  padding: 0;
+  text-align: left;
+  flex-direction: column;
+  padding: 12px;
+  font-size: 19px;
 }
 
 .div-container-categories {
@@ -181,19 +182,19 @@ $font-color: #585959;
 }
 
 .button-categories-medium {
-    height: 100%;
-    width: 100%;
-    font-weight: 600;
-    color: #585959;
-    background: transparent;
-    padding: 0;
-    text-align: left;
-    flex-direction: column;
-    padding: 6px;
-    font-size: 19px;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  color: #585959;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  flex-direction: column;
+  padding: 6px;
+  font-size: 19px;
 }
 
-.p-title-button{
-    color: $font-color;
-    text-align: left;
+.p-title-button {
+  color: $font-color;
+  text-align: left;
 }

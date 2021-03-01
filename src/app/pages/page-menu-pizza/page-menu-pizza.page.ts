@@ -39,7 +39,7 @@ export class PageMenuPizzaPage implements OnInit {
       } else if (params['groupproductid'] == 2) {
         this.title = 'Pizza Doce'
       } else {
-        this.title = 'Bibidas'
+        this.title = 'Bebidas'
       }
 
       this.getProductFunction();

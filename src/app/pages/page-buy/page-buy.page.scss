@@ -54,11 +54,13 @@ $font-color: #585959;
   text-align: center;
   margin-top: 15px;
   margin: 0;
+  color: #fff;
 }
 
 .subtitle-product {
   text-align: center;
   font-size: 15px;
+  color: #fff;
 }
 
 .box-info {
@@ -71,6 +73,7 @@ $font-color: #585959;
   --border-radius: 30px;
   --background: #5697A6;
   float: left;
+  --font-size: 10px;
 }
 
 .div-button-count {
@@ -109,5 +112,6 @@ $font-color: #585959;
     
     font-size: 30px;
     text-align: right;
+    color: #fff;
 
 }

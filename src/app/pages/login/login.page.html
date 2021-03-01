@@ -1,11 +1,16 @@
 <ion-content>
   <div id="container">
+    <ion-button id="div-icon">
+      <ion-back-button text="" class="icon-button" defaultHref="/page-menu" icon="arrow-back-outline">
+      </ion-back-button>
+    </ion-button>
+    
     <div id="logo-brand">
 
 
       <div class="div-card-login">
         <h1 class="h1-title">Entrar</h1>
-        <p>Ainda não tem conta? <a (click)="navigatePage('register')">Registar</a></p>
+        <p>Ainda não tem conta? <a class="link-p" (click)="navigatePage('register')">Registrar</a></p>
         <ion-input type="email" class="input-login" [(ngModel)]="userObj.email" placeholder="Email:"></ion-input>
         <ion-input class="input-login" type="password" [(ngModel)]="userObj.password" placeholder="Senha:"></ion-input>
         <ion-button class="button-create" (click)="login(userObj)">Entrar</ion-button>

@@ -18,7 +18,7 @@ export class PageMenuPage implements OnInit {
   id: any;
   groupproductid: any;
 
-  
+
   nameUser: string;
 
   constructor(
@@ -27,7 +27,7 @@ export class PageMenuPage implements OnInit {
     public alertController: AlertController
   ) {
     this.getMainProduct()
-    
+
     this.nameUser = localStorage.getItem('U_N')
   }
 
@@ -72,11 +72,11 @@ export class PageMenuPage implements OnInit {
 
       this.objProduct = data['formProd'];
 
-      this.name           = data['formProd'].name;
-      this.pathImg        = data['formProd'].pathImg;
+      this.name = data['formProd'].name;
+      this.pathImg = data['formProd'].pathImg;
       this.groupproductid = data['formProd'].groupproductid;
-      this.id             = data['formProd'].id;
-      this.price          = (data['formProd'].price).replace('.',',');
+      this.id = data['formProd'].id;
+      this.price = (data['formProd'].price).replace('.', ',');
 
       console.log(this.objProduct);
     })
@@ -84,6 +84,11 @@ export class PageMenuPage implements OnInit {
   }
 
   async presentAlertConfirm() {
+
+    if (localStorage.getItem('U_D') == undefined) {
+      return;
+    }
+
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
       header: 'Deseja sair?',
