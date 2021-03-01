@@ -55,9 +55,9 @@ ionic serve
 ![N|Solid](https://i.imgur.com/DhnQ2KT.png)     ![N|Solid](https://i.imgur.com/MJ2aPtU.png) 
 
 ## Licença
-Desenvolvedor FullStack
-Samuel Rodrigues
-[Linkedin] - [GitHub] 
+- Desenvolvedor FullStack
+- Samuel Rodrigues
+- [Linkedin] - [GitHub] 
 
 
 
