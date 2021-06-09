@@ -53,7 +53,7 @@ ionic serve
 
 ![N|Solid](https://i.imgur.com/W0Kmo38.png)      ![N|Solid](https://i.imgur.com/WvDJ1Ox.png) 
 
--
+
 
 ![N|Solid](https://i.imgur.com/XUZTTsx.png)     ![N|Solid](https://i.imgur.com/MJ2aPtU.png) 
 
